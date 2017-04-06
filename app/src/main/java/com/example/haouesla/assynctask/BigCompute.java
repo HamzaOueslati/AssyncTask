@@ -59,6 +59,7 @@ public class BigCompute extends AsyncTask<Void, Integer, Void> {
             }catch (Exception e){}
             publishProgress(progress);
         }*/
+        // Permet de faire avancer la progress barre en synchronisation avec la musique
         while( this.mediaPlayer.getCurrentPosition() < this.mediaPlayer.getDuration() ){
             publishProgress(this.mediaPlayer.getCurrentPosition());
         }
